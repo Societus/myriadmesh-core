@@ -1,0 +1,55 @@
+[workspace]
+members = [
+    "crates/myriadmesh-crypto",
+    "crates/myriadmesh-dht",
+    "crates/myriadmesh-routing",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.9.0"
+edition = "2021"
+authors = ["MyriadMesh Contributors"]
+license = "GPL-3.0-only"
+repository = "https://github.com/myriadmesh/core"
+homepage = "https://myriadmesh.org"
+documentation = "https://docs.rs/myriadmesh-crypto"
+
+[workspace.dependencies]
+# Cryptography
+sodiumoxide = "0.2"
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+bincode = "1.3"
+
+# Async runtime
+tokio = { version = "1.35", features = ["full"] }
+async-trait = "0.1"
+futures = "0.3"
+
+# Error handling
+thiserror = "1.0"
+anyhow = "1.0"
+
+# Utilities
+hex = "0.4"
+blake2 = "0.10"
+rand = "0.8"
+chrono = { version = "0.4", features = ["serde"] }
+
+# Testing
+criterion = "0.5"
+tempfile = "3.8"
+
+# Protocol dependency
+myriadmesh-protocol = { path = "../myriadmesh-protocol/reference-impl" }
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+
+[profile.dev]
+opt-level = 0
+debug = true

@@ -1,0 +1,40 @@
+[package]
+name = "myriadmesh-dht"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+# Workspace dependencies
+myriadmesh-protocol.workspace = true
+myriadmesh-crypto = { path = "../myriadmesh-crypto" }
+
+# Serialization
+serde.workspace = true
+bincode.workspace = true
+serde-big-array = "0.5"  # SECURITY H7: For serializing 64-byte signatures
+
+# Crypto
+sodiumoxide.workspace = true
+
+# Async runtime
+tokio.workspace = true
+async-trait.workspace = true
+futures.workspace = true
+
+# Logging
+tracing = "0.1"
+
+# Error handling
+thiserror.workspace = true
+anyhow.workspace = true
+
+# Utilities
+blake2.workspace = true
+rand.workspace = true
+hex = "0.4"  # SECURITY C2: For hex encoding in error messages
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["test-util", "macros"] }

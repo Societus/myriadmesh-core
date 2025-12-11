@@ -1,0 +1,23 @@
+[package]
+name = "myriadmesh-crypto"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+sodiumoxide = { workspace = true }
+serde = { workspace = true }
+thiserror = { workspace = true }
+hex = { workspace = true }
+blake2 = { workspace = true }
+rand = { workspace = true }
+serde-big-array = "0.5" # SECURITY C6: Support for 64-byte arrays in serde
+
+[dev-dependencies]
+criterion = { workspace = true }
+
+[[bench]]
+name = "crypto_benchmarks"
+harness = false
