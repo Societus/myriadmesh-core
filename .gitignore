@@ -1,0 +1,21 @@
+# Rust
+/target/
+Cargo.lock
+**/*.rs.bk
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Build artifacts
+*.o
+*.a
+*.so
+*.dylib
+
+# Dependencies
+.deps/
