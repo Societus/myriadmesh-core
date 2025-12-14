@@ -25,7 +25,7 @@ pub use error::{DhtError, Result};
 pub use iterative_lookup::{iterative_find_node, IterativeLookup, LookupResult, LookupStats, LookupTransport};
 pub use kbucket::KBucket;
 pub use node_info::{AdapterInfo, NodeCapabilities, NodeInfo, PublicNodeInfo};
-pub use operations::{FindNodeRequest, FindNodeResponse, FindValueRequest, FindValueResponse};
+pub use operations::{FindNodeRequest, FindNodeResponse, FindValueRequest, FindValueResponse, StoreRequest, StoreAck};
 pub use reputation::{NodeReputation, ReputationManager};
 pub use request_handler::DhtRequestHandler;
 pub use routing_table::RoutingTable;

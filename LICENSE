@@ -1,0 +1,25 @@
+MyriadMesh Core
+Copyright (C) 2025 MyriadMesh Contributors
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+Additionally, you are expressly forbidden from:
+- Using this software or any modifications in commercial products or services without written permission from the copyright holders
+- Monetizing any fork, derivative work, or integration of this software without explicit written consent
+- Distributing this software or any modifications in exchange for payment, subscription fees, or other commercial consideration
+- Incorporating this technology into offerings that generate revenue without explicit permission
+- Using cryptographic algorithms or components from this software in commercial security products without permission
+- Building commercial services that rely on this networking technology without licensing
+
+Contact: For permission requests, please contact the MyriadMesh project maintainers.
