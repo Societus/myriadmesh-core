@@ -19,3 +19,4 @@ Cargo.lock
 
 # Dependencies
 .deps/
+.claude/
